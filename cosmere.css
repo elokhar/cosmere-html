@@ -1,0 +1,76 @@
+﻿
+body {
+    background-color: #66ffcc;
+    background-image: url("img/cosmere_symbol.jpg");
+}
+header {
+    background-color: #00f47a;
+}
+nav{
+    width:10%;
+    color:#4112b8;
+    font-weight:bolder;
+}
+div{
+    position:relative;
+    align-content:center;
+}
+header h1 {
+    background-color: #00f47a;
+    float:left;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    background-color: #ffff99;
+    width:100%;
+    float:left;
+}
+
+table {
+    border: solid black 2px;
+    
+}
+td {
+    border: solid black 2px;
+}
+thead{
+    font-weight:bold;
+    text-align:center;
+}
+img{
+    width:100%;
+}
+.diagrams{
+    width:100%;
+}
+.active{
+    color:#4c0c44;
+}
+div.gallery img {
+    height:300px;
+    
+}
+
+img:hover{
+    cursor:all-scroll;
+}
+::selection{
+    color:darkblue;
+    background-color:burlywood;
+}
+#tablecom{
+    color:darkblue;
+    font-style:italic;
+}
+@media(min-width:720px){
+
+    img {
+        width: initial;
+        float: left;
+        vertical-align: central;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

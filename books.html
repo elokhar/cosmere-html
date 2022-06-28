@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cosmere</title>
+    <link rel="stylesheet" href="cosmere.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="books.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header id="top">
+        <h1><i>The epic universe of cosmere</i></h1>
+        
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="planets.html">Planets</a></li>
+            <li><a href="magic.html">Magic</a></li>
+            <li><a href="books.html" class="active">Books</a>
+                <ul>
+                    <li><a href="books.html" class="active">Reading order</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="diagrams">
+        <i><a href="#bottom">To the bottom</a></i>
+        <h3>Where do I start?</h3>
+        <img id="diagrameng" src="img/reading_order_eng.png" alt="Suggested reading order of Cosmere books" title="Suggested reading order" class="diagrams" />
+
+    </div>
+    <div id="form">
+        <p>You may also choose your starting point using the form below:</p>
+        <form name="form">
+            Enter your name:
+            <input type="text" name="name" /><br />
+            <br />Enter your age:
+            <input type="text" name="age" /><br />
+            <br />Or choose your date of birth:
+            <input type="text" id="datepicker"><br />
+            <br />Which of these genres do you like reading?
+            <br /><input type="checkbox" name="genre" value="fantasy" />Fantasy
+            <br /><input type="checkbox" name="genre" value="romance" />Romance
+            <br /><input type="checkbox" name="genre" value="neither" />Neither of these two
+            <br /><br />Are you interested in getting to know the whole Cosmere?
+            <br /><input type="radio" name="cosmere" value="yes" />Definitely!
+            <br /><input type="radio" name="cosmere" value="maybe" />Maybe
+            <br /><input type="radio" name="cosmere" value="no" />Not really
+            <br /><br />Enter the secret word: <input type="password" />
+            <br /><br />Select your favorite color: <input type="color">
+            <br />
+            <br />
+            <button type="submit">Sumbit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <button onclick="validate()">Calculate</button>
+    </div>
+    <div>
+        <form onsubmit="save()" name="notes">
+            <br />Here you may leave a note:
+            <br /><textarea name="note"></textarea>
+            <br /><button type="submit">Save</button>
+        </form>
+        <button onclick="show()">Show recent note</button>
+
+        <form onsubmit="saveprivate()" name="private">
+            <br />Here you may leave a private note:
+            <br />(it will disappear after closing this tab)
+            <br /><textarea name="note"></textarea>
+            <br /><button type="submit">Save</button>
+
+        </form>
+        <button onclick="showprivate()">Show your private note</button>
+    </div>
+    <footer id="bottom">
+        Site author: Piotr Wojciechowski<br />
+        More on Cosmere: <a href="https://coppermind.net/wiki/Coppermind:Welcome">Cosmere wiki</a>
+        <br />Author's website: <a href="https://brandonsanderson.com/">brandonsanderson.com</a>
+        <br /><i><a href="#top">To the top</a></i>
+    </footer>
+</body>
+</html>
